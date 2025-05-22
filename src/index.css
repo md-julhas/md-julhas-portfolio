@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-container {
+    @apply w-full px-2 md:px-16 flex justify-center;
+  }
+  .inner-container {
+    @apply w-full xl:w-[1300px];
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c3c2c2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff2e52;
+}
+::-webkit-scrollbar-track {
+  background-color: #6a6969;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+.hover-underline-color-effect {
+  background: linear-gradient(to right, #ff014f) no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  transition: background-size 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.hover-underline-color-effect:hover {
+  background-size: 100% 2px;
+  color: #ff014f;
+}
+
+/* nav hover and active link */
+.nav-hover {
+  background: linear-gradient(to right, #ff014f) no-repeat;
+  background-size: 0 3px;
+  background-position: 0 100%;
+  transition: background-size 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.nav-hover:hover {
+  background-size: 100% 3px;
+  color: #ff014f;
+}
+
+.active-link {
+  background-size: 100% 3px;
+  color: #ff014f;
+}
