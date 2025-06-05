@@ -20,16 +20,11 @@ const Hero = () => {
           <h2 className="text-3xl md:text-4xl xl:text-5xl  font-extrabold">
             Web Application Developer
           </h2>
-          <p className="text-base md:text-lg mt-5">
-            I build modern, scalable, and user-focused web applications
-          </p>
           <p className="text-base md:text-lg text-gray-500">
-            With expertise in both{" "}
-            <span className="bg-lime-100 dark:bg-lime-950 px-1">frontend</span>{" "}
-            and{" "}
-            <span className="bg-lime-100 dark:bg-lime-950 px-1">backend</span>{" "}
-            development, I develop efficient software solutions that streamline
-            business operations and simplify everyday tasks.
+            I build modern, scalable, and user-focused web applications. With
+            several years of experience in web application development, I create
+            efficient software solutions that streamline business operations and
+            simplify everyday tasks.
           </p>
 
           {/* CTA section*/}
