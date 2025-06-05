@@ -1,5 +1,5 @@
 import { BiCodeBlock } from "react-icons/bi"
-import { FaPhoneAlt, FaReact, FaTools } from "react-icons/fa"
+import { FaPhoneAlt } from "react-icons/fa"
 
 import reactjs from "../assets/reactjs.png"
 import tailwindcss from "../assets/tailwindcss.png"
@@ -8,8 +8,6 @@ import redux from "../assets/redux.png"
 import nodejs from "../assets/nodejs.png"
 import expressjs from "../assets/expressjs.png"
 import mongodb from "../assets/mongodb.png"
-import JMDashboardLight from "../assets/jm-dashboard-light.png"
-import JMDashboardDark from "../assets/jm-dashboard-dark.png"
 import html from "../assets/html.png"
 import css from "../assets/css.png"
 import js from "../assets/js.png"
@@ -20,19 +18,25 @@ import linux from "../assets/linux.png"
 import figma from "../assets/figma.png"
 import hero from "../assets/julhas-hero.png"
 
-import mainulPorfolioLight from "../assets/mainul-portfolio-light.png"
-import mainulPorfolioDark from "../assets/mainul-portfolio-dark.png"
 import howModernTech from "../assets/how-modern-tech.png"
+
+import spicymeal from "../assets/spicymeal.png"
+import spicymealDark from "../assets/spicymeal-dark.png"
+import spicymealAdmin from "../assets/spicymeal-admin.png"
+import spicymealAdminDark from "../assets/spicymeal-admin-dark.png"
+import JMDashboard from "../assets/jm-dashboard.png"
+import JMDashboardDark from "../assets/jm-dashboard-dark.png"
+import mainul from "../assets/mainul.png"
+import mainulDark from "../assets/mainul-dark.png"
 
 import { PiDevicesDuotone, PiLayoutBold } from "react-icons/pi"
 import { TbLogs, TbMessageSearch } from "react-icons/tb"
 import { TfiFacebook } from "react-icons/tfi"
-import { IoLogoTwitter, IoMdInformationCircle } from "react-icons/io"
+import { IoLogoTwitter } from "react-icons/io"
 import { RiLinkedinBoxFill } from "react-icons/ri"
 import { FaLocationDot, FaSquareInstagram } from "react-icons/fa6"
 import { IoMail } from "react-icons/io5"
-import { MdHome } from "react-icons/md"
-import { GrHome, GrProjects } from "react-icons/gr"
+import { GrHome } from "react-icons/gr"
 import { LuMessageSquareText } from "react-icons/lu"
 import { HiOutlineInformationCircle } from "react-icons/hi"
 import { VscTools } from "react-icons/vsc"
@@ -241,17 +245,19 @@ export const myTechnicalSkills = [
 
 export const projects = [
   {
-    title: "JM Dashboard App (Frontend)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    liveLink: "https://md-julhas.github.io/jm-dashboard/#/ecommerce",
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
+    title:
+      "SpicyMeal – Full-Stack App for Food Delivery & Restaurant Management",
+    imgDark: spicymealDark,
+    imgLight: spicymeal,
+    liveLink: "https://spicymeal.vercel.app/",
+    gitHubLink: "https://github.com/md-julhas/spicy-meal",
     description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
+      "SpicyMeal is a full-stack restaurant food delivery application that delivers a seamless food ordering experience. It offers features like food search, organized categories, cart management, table booking, order tracking, and a contact form for customers to send messages directly to the restaurant or support team.",
     metaDescription:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    metaKeywords: ["web developemetn"],
+      "SpicyMeal is a full-stack restaurant food delivery app offering seamless food ordering with features like food search, categorized menus, cart management, table booking, order tracking, and direct customer messaging.",
+    metaKeywords: [
+      "food delivery app, restaurant app, online food ordering, md julhas, table booking, order tracking, customer messaging, restaurant support, food ordering system, full-stack restaurant app",
+    ],
     technologies: [
       "tailwindcss CSS",
       "react.js",
@@ -267,7 +273,7 @@ export const projects = [
 
     features: [
       {
-        category: "Frontend (User Side)",
+        category: "🔧 Frontend",
         items: [
           "Display food items via API calls",
           "Food Search System",
@@ -277,111 +283,11 @@ export const projects = [
           "Contact Us System",
           "View orders and status",
           "View user profile",
-        ],
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
-        description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
-
-        solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
-      },
-    ],
-  },
-  {
-    title: "JM Dashboard App (Frontend)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    liveLink: "https://md-julhas.github.io/jm-dashboard/#/ecommerce",
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
-    description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    technologies: [
-      "tailwindcss CSS",
-      "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
-      "git & gitHub",
-    ],
-
-    features: [
-      {
-        category: "Frontend (User Side)",
-        items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
-        ],
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
-        description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
-
-        solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
-      },
-    ],
-  },
-  {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
-    description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    technologies: [
-      "tailwindcss CSS",
-      "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
-      "git & gitHub",
-    ],
-
-    features: [
-      {
-        category: "Frontend (User Side)",
-        items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
+          "Customer Message Submission",
         ],
       },
       {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
+        category: "🔧 Backend",
         items: [
           "Provide food data via REST API",
           "Handle cart, orders, and store them in database",
@@ -389,23 +295,27 @@ export const projects = [
           "Store contact messages from users",
           "Authenticate users with JWT",
           "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
+          "Enhancing API security with route-specific rate limiting",
         ],
       },
       {
-        category: "Admin Panel",
-        items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
-        ],
+        category: "🧾 Authentication System",
+        items: ["User registration", "Login system", "Logout system"],
       },
     ],
 
     challenges: [
       {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
+        title:
+          "1.Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
+        description:
+          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
+
+        solution:
+          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
+      },
+      {
+        title: "2.Incorrect Client IP Detection Behind Proxy",
         description:
           "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
 
@@ -415,13 +325,18 @@ export const projects = [
     ],
   },
   {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
+    title: "SpicyMeal – Restaurant Admin Panel (Full-Stack App)",
+    imgDark: spicymealAdminDark,
+    imgLight: spicymealAdmin,
+    liveLink: "https://spicymealadmin.vercel.app/",
+    gitHubLink: "https://github.com/md-julhas/spicy-meal/tree/main/admin",
     description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
+      "This is the Admin Panel for the SpicyMeal full-stack restaurant web application. It provides backend management functionalities for food items, orders, table bookings, messages, and users. Built with Node.js, Express.js, and MongoDB, it serves as the core API and admin interface of the application.",
+    metaDescription:
+      "This is the Admin Panel for the SpicyMeal full-stack restaurant web application. It provides backend management functionalities for food items, orders, table bookings, messages, and users. Built with Node.js, Express.js, and MongoDB, it serves as the core API and admin interface of the application.",
+    metaKeywords: [
+      "restaurant admin panel, food delivery admin dashboard, full-stack restaurant app, Express.js admin panel, MongoDB food app, restaurant order management, food item management, table booking system, admin panel for food delivery,",
+    ],
     technologies: [
       "tailwindcss CSS",
       "react.js",
@@ -437,418 +352,185 @@ export const projects = [
 
     features: [
       {
-        category: "Frontend (User Side)",
+        category: "🔧 Mange Messages",
         items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
+          "View messages submitted via the Contact Form",
+          "Delete messages",
         ],
       },
       {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
+        category: "🔧 Manage Food Items",
         items: [
-          "Provide food data via REST API",
-          "Handle cart, orders, and store them in database",
-          "Process and store table booking requests",
-          "Store contact messages from users",
-          "Authenticate users with JWT",
-          "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
+          "Upload new food items with relevant details",
+          "Delete food items from the collection",
         ],
       },
       {
-        category: "Admin Panel",
+        category: "🔧 Manage Orders",
         items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
+          "View all food orders placed by users",
+          "Change order status: pending, food processing, delivered",
+          "Delete old or canceled orders",
+        ],
+      },
+      {
+        category: "🔧 Manage Table Bookings",
+        items: [
+          "View all table reservations submitted by users",
+          "Approve, reject, or delete reservations as needed",
+        ],
+      },
+      {
+        category: "🔧 Manage Users",
+        items: [
+          "View a list of all registered users",
+          "Access detailed information about individual users",
+        ],
+      },
+      {
+        category: "🔧 Access Control & Backend Features",
+        items: [
+          "Restricted login access for admin users only",
+          "Complete backend functionality implemented using RESTful APIs",
+          "Route-level API protection with rate limiting for enhanced security",
         ],
       },
     ],
 
     challenges: [
       {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
+        title: "1.Secure API Usage",
         description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
+          "Preventing abuse of public endpoints and ensuring backend stability.",
 
         solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
+          "Integrated route-specific rate limiting and input validation using Express middleware (express-rate-limit).",
+      },
+      {
+        title: "2.User-Friendly Admin Interface",
+        description:
+          "The admin panel must be responsive and intuitive to accommodate non-technical users.",
+
+        solution:
+          "Developed a modern UI using React and Tailwind CSS featuring clear layouts and controls for easy data management.",
       },
     ],
   },
   {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
+    title: "JM Dashboard – E-commerce & Business Analytics React Template",
     imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
+    imgLight: JMDashboard,
+    liveLink: "https://jmdashboard.vercel.app/",
+    gitHubLink: "https://github.com/md-julhas/jm-dashboard",
     description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
+      "JM Dashboard is a comprehensive React-based dashboard template designed for e-commerce and business analytics. It includes a wide variety of sections and features tailored for managing e-commerce platforms, viewing analytics, customer interactions, task management, and user profiles. Built with Vite and Tailwind CSS, this dashboard provides a fast, responsive, and customizable interface for managing and analyzing business data.",
+    metaDescription:
+      "JM Dashboard is a fast, responsive React admin template for e-commerce and business analytics, built with Vite and Tailwind CSS.",
+    metaKeywords: [
+      "e-commerce dashboard, business analytics template, admin panel, analytics dashboard, React e-commerce UI, React dashboard template, task management dashboard, customer management panel",
+    ],
     technologies: [
+      "HTML & CSS",
       "tailwindcss CSS",
       "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
+      "Material UI",
       "git & gitHub",
     ],
 
     features: [
       {
-        category: "Frontend (User Side)",
+        category: "🔧 Highlights",
         items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
+          "Responsive Sidebar with Navigation",
+          "Navbar with Settings, Dark Mode, Cart, Notifications, and Profile",
+          "Fully Mobile Responsive Layout",
         ],
       },
       {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
+        category: "🔧 Theme Settings",
         items: [
-          "Provide food data via REST API",
-          "Handle cart, orders, and store them in database",
-          "Process and store table booking requests",
-          "Store contact messages from users",
-          "Authenticate users with JWT",
-          "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
+          "Dark / Light Mode Toggle",
+          "Customizable Theme Colors",
+          "Preferences Stored in Local Storage",
         ],
       },
       {
-        category: "Admin Panel",
+        category: "🔧 Pages Features",
         items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
+          "Dashboards for eCommerce and Analytics",
+          "Communication Tools: Chat & Email",
+          "Task Management with Kanban Board",
+          "Product Listing and Details View",
+          "User Profile with Editable Info and Posts",
+          "Auth Pages (Login, Register, Forgot Password, etc.)",
+          "Error Handling Page",
         ],
       },
     ],
 
     challenges: [
       {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
+        title: "1.Responsive Design Across Devices",
         description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
+          "Ensuring the sidebar, navbar, and all page components adapt smoothly to different screen sizes (mobile, tablet, desktop).",
 
         solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
+          "I utilized Tailwind CSS’s utility-first classes, responsive breakpoints, and robust layout techniques like Flexbox and Grid to ensure a fully responsive design optimized for all devices.",
+      },
+      {
+        title: "2.Theme Customization & Persistence",
+        description:
+          "Allowing users to switch themes (dark/light) and customize colors, while saving preferences between sessions.",
+        solution:
+          "I implemented React state management for themes and stored preferences in Local Storage to ensure persistence on reload.",
+      },
+      {
+        title: "3.Task Management Functionality",
+        description:
+          "Creating a flexible kanban board with task creation, editing, and deletion.",
+        solution:
+          "Implemented state-driven task management using React hooks, featuring clear UI components for each task state.",
       },
     ],
   },
   {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
+    title: "Mainul - Personal Portfolio",
+    imgDark: mainulDark,
+    imgLight: mainul,
+    liveLink: "https://mohiuddinmainul.vercel.app/",
+    gitHubLink: "https://github.com/md-julhas/mainul-portfolio",
     description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    technologies: [
-      "tailwindcss CSS",
-      "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
-      "git & gitHub",
+      "This is a portfolio website to showcase data entry and lead generation expertise. It demonstrates the ability to provide accurate, efficient, and business-driven data solutions tailored to clients' specific needs.",
+    metaDescription:
+      "This is a portfolio website to showcase data entry and lead generation expertise. It demonstrates the ability to provide accurate, efficient, and business-driven data solutions tailored to clients' specific needs.",
+    metaKeywords: [
+      "data entry expert, lead generation specialist, accurate data solutions, efficient data management, business-driven data services, client-focused data entry, data processing portfolio, lead generation portfolio, professional data entry, data solutions for businesses",
     ],
+    technologies: ["HTML & CSS", "tailwindcss CSS", "react.js", "git & gitHub"],
 
     features: [
       {
-        category: "Frontend (User Side)",
+        category: "🔧 About & Services",
         items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
+          "Hero Introduction: Professional intro with name, title, and value-driven summary",
+          "Services Section: Clear list of offered services like Data Entry, Web Research, etc.",
+          "Hobbies & Interests: Personal insights to humanize the profile",
         ],
       },
       {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
+        category: "🔧 Portfolio & Contact",
         items: [
-          "Provide food data via REST API",
-          "Handle cart, orders, and store them in database",
-          "Process and store table booking requests",
-          "Store contact messages from users",
-          "Authenticate users with JWT",
-          "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
+          "Portfolio Showcase",
+          "Contact Page: Easy way for clients to reach out directly",
         ],
       },
       {
-        category: "Admin Panel",
+        category: "🔧 Design & Theme Settings",
         items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
+          "Responsive Design (mobile-first)",
+          "Clean UI/UX",
+          "Theme Options: Light Mode, Dark Mode, System Default, Theme Color Selection, Reset Theme Option",
         ],
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
-        description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
-
-        solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
-      },
-    ],
-  },
-  {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
-    description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    technologies: [
-      "tailwindcss CSS",
-      "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
-      "git & gitHub",
-    ],
-
-    features: [
-      {
-        category: "Frontend (User Side)",
-        items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
-        ],
-      },
-      {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
-        items: [
-          "Provide food data via REST API",
-          "Handle cart, orders, and store them in database",
-          "Process and store table booking requests",
-          "Store contact messages from users",
-          "Authenticate users with JWT",
-          "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
-        ],
-      },
-      {
-        category: "Admin Panel",
-        items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
-        ],
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
-        description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
-
-        solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
-      },
-    ],
-  },
-  {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
-    description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    technologies: [
-      "tailwindcss CSS",
-      "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
-      "git & gitHub",
-    ],
-
-    features: [
-      {
-        category: "Frontend (User Side)",
-        items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
-        ],
-      },
-      {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
-        items: [
-          "Provide food data via REST API",
-          "Handle cart, orders, and store them in database",
-          "Process and store table booking requests",
-          "Store contact messages from users",
-          "Authenticate users with JWT",
-          "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
-        ],
-      },
-      {
-        category: "Admin Panel",
-        items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
-        ],
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
-        description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
-
-        solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
-      },
-    ],
-  },
-  {
-    title: "SpicyMeal (Full-Stack Restaurant Food Delivery Application)",
-    imgDark: JMDashboardDark,
-    imgLight: JMDashboardLight,
-    gitHubLink:
-      "https://github.com/md-julhas/SpicyMeal-Full-Stack-Restaurant-Food-Delivery-Application",
-    description:
-      "SpicyMeal is a full-stack restaurant food delivery application that offers a seamless food ordering experience for customers, including features like food search, organized categories, cart management, table booking, and order tracking. The admin panel provides comprehensive tools to manage food items, user profiles, orders, and customer messages, ensuring efficient restaurant operations and customer service.",
-    technologies: [
-      "tailwindcss CSS",
-      "react.js",
-      "axios",
-      "react router",
-      "node.js",
-      "express.js",
-      "mongodDB",
-      "mongoose",
-      "JWT",
-      "git & gitHub",
-    ],
-
-    features: [
-      {
-        category: "Frontend (User Side)",
-        items: [
-          "Display food items via API calls",
-          "Food Search System",
-          "Organized Food Categories",
-          "Food ordering system (Add and view cart items, fill up delivery form and place orders)",
-          "Table booking system",
-          "Contact Us System",
-          "View orders and status",
-          "View user profile",
-        ],
-      },
-      {
-        category: "Authentication",
-        items: ["User registration", "Login system", "Logout system"],
-      },
-      {
-        category: "Backend",
-        items: [
-          "Provide food data via REST API",
-          "Handle cart, orders, and store them in database",
-          "Process and store table booking requests",
-          "Store contact messages from users",
-          "Authenticate users with JWT",
-          "Hash and verify passwords securely",
-          "Support admin actions: manage messages, food items, orders, and users",
-        ],
-      },
-      {
-        category: "Admin Panel",
-        items: [
-          "Manage messages (view & delete)",
-          "Manage food list (upload, view, delete)",
-          "Manage orders (view, delete, change status)",
-          "Manage users (view all, detailed info)",
-        ],
-      },
-    ],
-
-    challenges: [
-      {
-        title: "Stale Cart Data After Food Deletion (Data Inconsistency Issue)",
-        description:
-          "Initially, I designed the cart system to rely on the food items fetched during the initial API call. Each user's cart was stored in the database as an object (cartData) using food IDs as keys. The issue arose when an admin deleted a food item that a user had previously added to their cart. Since the cartData still contained the deleted food's ID, the frontend would throw an error when attempting to render the cart—because the item no longer existed in the newly fetched food list.",
-
-        solution:
-          "To resolve this, I separated the cart rendering process from the initial food fetch logic. Instead, I created a dedicated backend API that directly retrieves and validates the user's cart data. Fetched the user's cartData. Checked if each food ID in cartData still existed in the current food collection in the database. Removed any invalid or deleted food IDs from the cart. Sent back only the valid cart data in the response. This ensured that users would never encounter errors due to deleted food items in their cart, and the app could handle such cases gracefully.",
       },
     ],
   },
@@ -1000,7 +682,7 @@ export const dummyBlogs = [
       "How Artificial Intelligence Is Shaping the Future of Web Development",
     author: "Muhammad Zulhash",
     tags: ["AI", "web development", "future technology", "machine learning"],
-    image: mainulPorfolioLight,
+    image: mainulDark,
     body: [
       {
         type: "paragraph",
@@ -1045,7 +727,7 @@ export const dummyBlogs = [
       "business safety",
       "data protection",
     ],
-    image: mainulPorfolioDark,
+    image: mainul,
     body: [
       {
         type: "paragraph",

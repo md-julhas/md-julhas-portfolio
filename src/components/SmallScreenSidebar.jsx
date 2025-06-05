@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom"
 import julhasLogo from "../assets/julhas-logo.png"
 import { IoCloseOutline, IoSunny } from "react-icons/io5"
 import { WiMoonAltThirdQuarter } from "react-icons/wi"
-import DarkLightToggleButton from "./DarkLightToggleButton"
 import SocialLinks from "./SocialLinks"
 
 const SmallScreenSidebar = () => {
@@ -94,7 +93,7 @@ const SmallScreenSidebar = () => {
 
               {/* Change theme mode */}
               <button
-                className="text-gray-200 px-2 py-2 rounded-sm bg-gradient-to-br from-gradientFirst to-gradientSecond hover:brightness-90 transition-all duration-300 mt-auto mb-5"
+                className="text-gray-200 px-2 py-2 rounded-sm bg-gradient-to-br from-gradientFirst to-gradientSecond hover:brightness-90 transition-all duration-300 mt-10"
                 onClick={() => {
                   const newTheme = themeMode === "light" ? "dark" : "light"
                   setThemeMode(newTheme)

@@ -21,7 +21,7 @@ const ProjectDetail = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>{project.title} | Md Julhas</title>
+        <title>Md Julhas | {project.title} </title>
         <meta name="description" content={project.metaDescription} />
         <meta name="keywords" content={project.metaKeywords} />
       </Helmet>
@@ -50,7 +50,7 @@ const ProjectDetail = () => {
             <img
               src={themeMode === "dark" ? project.imgDark : project.imgLight}
               alt={project.title}
-              className="w-full h-[400px] lg:h-[600px] object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
 
