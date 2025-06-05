@@ -18,7 +18,8 @@ import linux from "../assets/linux.png"
 import figma from "../assets/figma.png"
 import hero from "../assets/julhas-hero.png"
 
-import howModernTech from "../assets/how-modern-tech.png"
+import websiteImportance from "../assets/website-importance.png"
+import webAppRole from "../assets/web-app-role.png"
 
 import spicymeal from "../assets/spicymeal.png"
 import spicymealDark from "../assets/spicymeal-dark.png"
@@ -538,8 +539,8 @@ export const projects = [
 
 export const dummyBlogs = [
   {
-    title: "Why Every Business Needs a Website in 2025",
-    author: "Muhammad Zulhash",
+    title: "The Importance of Having a Website for Your Business in 2025",
+    author: "Md Julhas",
     date: "12 May 2025",
     tags: [
       "business growth",
@@ -547,219 +548,80 @@ export const dummyBlogs = [
       "digital transformation",
       "website importance",
     ],
-    image: JMDashboardDark,
+    image: websiteImportance,
     body: [
       {
         type: "paragraph",
-        text: "In 2025, having a website is essential for businesses of all sizes. It’s the first step towards reaching customers, building credibility, and expanding your brand.",
-      },
-      {
-        type: "paragraph",
-        text: "So for the app In 2025, having a website is essential for businesses of all sizes. It’s the first step towards reaching customers, building credibility, and expanding your brand.",
+        desc: "In 2025, the digital world is more connected than ever. Whether you’re running a small local shop or managing a growing enterprise, having a website is no longer optional—it’s essential. Your website acts as the online face of your business, helping you reach customers, build trust, and compete effectively in your industry.",
       },
       {
         type: "section",
-        title: "1. Build Credibility and Trust",
-        desc: "A professionally designed website helps establish trust. Customers are more likely to trust a business with a robust online presence.",
+        title: "1. First Impressions Happen Online",
+        desc: "Today’s customers turn to Google before they make a decision. A clean, user-friendly website shows professionalism, builds credibility, and gives people the information they need—fast",
       },
+
       {
         type: "section",
         title: "2. Boost Visibility and Reach",
-        desc: "Search engine optimization (SEO) strategies can help your website show up in search results, attracting new customers.",
+        desc: "A website acts as a powerful tool to increase your brand’s visibility in 2025. By implementing effective SEO practices—such as using relevant keywords, optimizing page speed, and creating valuable content—you can improve your search engine rankings. This means more people will discover your business when they search online. Unlike physical stores limited by location and hours, a website is always open and accessible from anywhere. Whether you're targeting local customers or a global audience, your website helps you connect with more people, grow your brand awareness.",
+      },
+
+      {
+        type: "section",
+        title: "4. Showcasing Your Products or Services",
+        desc: "Your website is the perfect place to showcase what you offer with images, descriptions, prices, reviews, and FAQs. It helps people understand what makes your business unique. In 2025, users expect this information at their fingertips—and if you don’t provide it, a competitor will.",
       },
       {
         type: "section",
-        title: "3. Improve Customer Engagement",
-        desc: "With interactive features like contact forms, blogs, and live chat, websites provide an excellent way to engage with potential customers.",
+        title: "5. Gaining Customer Insights",
+        desc: "Modern websites can track visitor data—how they found your site, what pages they viewed, and how long they stayed. This data helps you better understand your audience, refine your marketing strategy, and improve your products or services based on real feedback.",
       },
       {
         type: "section",
-        title: "4. Stay Competitive in the Digital Age",
-        desc: "Without a website, your business risks being overlooked. Having a site ensures you stay competitive and relevant.",
-      },
-      {
-        type: "paragraph",
-        text: "A website is no longer a luxury but a necessity. It is the cornerstone of a strong digital presence and can significantly impact a business's growth and success.",
+        title: "6. Building Long-Term Trust and Brand Value",
+        desc: "In 2025, trust is everything. A consistent online presence, customer testimonials, professional design, and clear contact options help build trust. Your website becomes a long-term asset that supports your brand reputation and builds lasting relationships with customers.",
       },
       {
         type: "conclusion",
-        text: "Investing in a website in 2025 is no longer optional—it's a must for any business aiming to thrive in the digital era.",
-      },
-    ],
-  },
-  {
-    title: "How Web Apps Are Transforming Business Operations",
-    author: "Muhammad Zulhash",
-    tags: [
-      "web apps",
-      "business automation",
-      "technology solutions",
-      "digital transformation",
-    ],
-    image: hero,
-    body: [
-      {
-        type: "paragraph",
-        text: "Web apps are revolutionizing business operations by automating tasks, improving efficiency, and reducing costs. From CRM systems to project management tools, web apps provide seamless experiences for businesses.",
-      },
-      {
-        type: "section",
-        title: "1. Streamlining Operations",
-        desc: "Web apps simplify complex processes, making it easier to manage tasks like inventory, sales tracking, and employee management, all from one platform.",
-      },
-      {
-        type: "section",
-        title: "2. Accessibility Anywhere",
-        desc: "Unlike traditional software, web apps can be accessed from any device with an internet connection, allowing teams to work remotely and increase productivity.",
-      },
-      {
-        type: "section",
-        title: "3. Real-Time Collaboration",
-        desc: "Web apps enable teams to collaborate in real-time, ensuring that information is shared instantly and that everyone is on the same page.",
-      },
-      {
-        type: "section",
-        title: "4. Scalability for Growth",
-        desc: "As your business grows, web apps can scale to meet the increased demand, ensuring that operations remain smooth without costly upgrades.",
-      },
-      {
-        type: "paragraph",
-        text: "Web apps not only provide cost-effective solutions but also enhance operational efficiency, which is critical for businesses aiming to stay competitive in today’s fast-paced market.",
-      },
-      {
-        type: "conclusion",
-        text: "Adopting web apps for business operations is key to staying competitive in today’s fast-moving market. They provide flexibility, efficiency, and scalability.",
-      },
-    ],
-  },
-  {
-    title: "The Role of Mobile-Friendly Websites in Business Success",
-    author: "Muhammad Zulhash",
-    tags: [
-      "mobile-friendly",
-      "responsive design",
-      "business growth",
-      "web design",
-    ],
-    image: howModernTech,
-    body: [
-      {
-        type: "paragraph",
-        text: "In 2025, more people access websites from mobile devices than from desktop computers. Mobile-friendly websites are essential for any business looking to stay relevant.",
-      },
-      {
-        type: "section",
-        title: "1. Improving User Experience",
-        desc: "A mobile-friendly website provides users with a seamless experience across devices, enhancing their satisfaction and increasing the likelihood of conversion.",
-      },
-      {
-        type: "section",
-        title: "2. Boosting SEO Rankings",
-        desc: "Search engines prioritize mobile-friendly websites in their rankings. A responsive design can help your website appear higher in search results.",
-      },
-      {
-        type: "section",
-        title: "3. Reaching a Larger Audience",
-        desc: "By optimizing your website for mobile devices, you ensure that your business is accessible to a wider audience, including people on the go.",
-      },
-      {
-        type: "section",
-        title: "4. Higher Conversion Rates",
-        desc: "Mobile-friendly sites tend to have higher conversion rates because they cater to users who prefer to browse and shop on their mobile devices.",
-      },
-      {
-        type: "paragraph",
-        text: "The rise of mobile internet usage means that businesses cannot afford to ignore mobile optimization. It's essential for retaining customers and improving business performance.",
-      },
-      {
-        type: "conclusion",
-        text: "A mobile-friendly website is no longer a luxury—it’s a necessity for business success in 2025.",
+        desc: "In a world that’s constantly evolving, having a website is more than a trend—it’s a business necessity. It helps you stay relevant, competitive, and connected with your customers. If you haven’t created a website for your business yet, 2025 is the perfect time to start.",
       },
     ],
   },
   {
     title:
-      "How Artificial Intelligence Is Shaping the Future of Web Development",
-    author: "Muhammad Zulhash",
-    tags: ["AI", "web development", "future technology", "machine learning"],
-    image: mainulDark,
-    body: [
-      {
-        type: "paragraph",
-        text: "Artificial intelligence (AI) is making significant strides in the field of web development, enhancing everything from design to user experience and automation.",
-      },
-      {
-        type: "section",
-        title: "1. AI-Powered Design Tools",
-        desc: "AI-driven design tools like Figma’s auto-layout and AI-based color palettes are helping developers create user interfaces that adapt to users' preferences, improving both functionality and aesthetics.",
-      },
-      {
-        type: "section",
-        title: "2. Smarter User Experiences",
-        desc: "AI can analyze user behavior and customize the user experience accordingly. This leads to more personalized websites and applications that are more likely to retain visitors.",
-      },
-      {
-        type: "section",
-        title: "3. Automating Testing and Debugging",
-        desc: "AI is also helping automate testing and debugging, speeding up the development process and ensuring that websites are free of errors before launch.",
-      },
-      {
-        type: "section",
-        title: "4. Enhancing Security with AI",
-        desc: "AI can improve web security by identifying potential vulnerabilities, detecting fraudulent activities, and predicting security threats before they happen.",
-      },
-      {
-        type: "paragraph",
-        text: "With AI becoming a more integral part of web development, the potential for faster, more responsive, and secure websites is growing rapidly, making it an essential tool for developers.",
-      },
-      {
-        type: "conclusion",
-        text: "AI is transforming web development, making it smarter, faster, and more secure. Embracing AI in your web development process can give your projects a competitive edge.",
-      },
-    ],
-  },
-  {
-    title: "Why Investing in Web Security is Crucial for Your Business",
-    author: "Muhammad Zulhash",
+      "The Role of Web Applications in Simplifying Daily Life and Business Operations",
+    author: "Md Julhas",
     tags: [
-      "web security",
-      "cybersecurity",
-      "business safety",
-      "data protection",
+      "web applications",
+      "customer engagement",
+      "technology solutions",
+      "digital transformation",
     ],
-    image: mainul,
+    image: webAppRole,
     body: [
       {
         type: "paragraph",
-        text: "In today’s digital world, web security is more important than ever. Businesses of all sizes are targets for cyberattacks, and investing in robust security measures is essential to protect your assets and customer data.",
+        desc: "In today’s fast-paced, technology-driven world, web applications have become an essential part of how we live and work. Whether it’s ordering food, managing finances, collaborating with colleagues, or running a business, web applications simplify tasks, save time, and boost productivity like never before.",
       },
       {
         type: "section",
-        title: "1. Protect Customer Data",
-        desc: "Your customers trust you with their personal information. A security breach can damage your reputation and result in the loss of valuable customer trust.",
+        title: "Streamlining Daily Life and Work",
+        desc: "Web applications have transformed the way we handle everyday tasks by making them faster, more convenient, and often automated. Whether it’s scheduling appointments, paying bills online, or tracking fitness goals, these applications provide intuitive interfaces and easy access from any device connected to the internet. Instead of juggling multiple tools or relying on manual processes, people now use integrated platforms that remind them of important dates, help manage household expenses, and even automate repetitive activities like bill payments or grocery orders. This level of convenience frees up time and mental energy, allowing individuals to focus on higher priority activities or simply enjoy more leisure time.",
       },
       {
         type: "section",
-        title: "2. Avoid Costly Data Breaches",
-        desc: "Data breaches can lead to financial loss, legal consequences, and damage to your brand. Investing in security measures can help prevent these costly incidents.",
+        title: "Enhancing Communication and Collaboration",
+        desc: "In the past, communication was often restricted by distance and time zones. Today, modern web-based tools have completely removed those barriers, enabling seamless interaction and collaboration regardless of location. Businesses can now host virtual meetings, share files, and work together on documents in real-time—all within a single digital environment. These platforms support smooth coordination, quick decision-making, and efficient project management, especially for remote or hybrid teams. This level of connectivity empowers organizations to stay agile, maintain strong teamwork, and respond swiftly to changes or challenges—without compromising flexibility or productivity.",
       },
       {
         type: "section",
-        title: "3. Strengthen Your Business Reputation",
-        desc: "A secure website builds trust with your audience, improving your brand reputation. Customers are more likely to engage with a business they believe is trustworthy.",
+        title: "Improving Business Operations",
+        desc: "Web applications have revolutionized the way businesses operate by automating core functions and providing tools for detailed management and analysis. Inventory management systems track stock levels in real time, reducing the risk of overstocking or shortages. Payroll and HR systems automate employee management, while sales and accounting platforms streamline invoicing and financial reporting. This automation not only reduces human errors but also saves significant time and resources, enabling companies to focus on growth and innovation.",
       },
-      {
-        type: "section",
-        title: "4. Stay Compliant with Regulations",
-        desc: "Investing in web security ensures that your business stays compliant with regulations like GDPR and CCPA, protecting both your business and your customers.",
-      },
-      {
-        type: "paragraph",
-        text: "Cybersecurity should be a top priority for any business, as a data breach could lead to irreparable damage. Preventing such issues ensures both customer trust and business continuity.",
-      },
+
       {
         type: "conclusion",
-        text: "Web security is no longer optional—it’s a business necessity. Prioritize security to protect your customers, reputation, and bottom line.",
+        desc: "In conclusion, web applications have become foundational to both our personal routines and business ecosystems. They not only simplify complex tasks and improve communication, but also empower smarter decision-making and operational efficiency.",
       },
     ],
   },

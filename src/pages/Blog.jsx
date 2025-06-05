@@ -43,7 +43,7 @@ const Blog = () => {
           <img
             src={blog.image}
             alt={blog.title}
-            className="w-full h-[400px] lg:h-[600px] xl:h-[800px] object-cover rounded-md mb-6"
+            className="w-full h-[400px] lg:h-[600px] xl:h-[800px] object-cover rounded-md mb-12"
           />
 
           {/* Blog body */}
@@ -52,7 +52,7 @@ const Blog = () => {
               case "paragraph":
                 return (
                   <p key={i} className="mb-5">
-                    {section.text}
+                    {section.desc}
                   </p>
                 )
               case "section":
@@ -70,7 +70,7 @@ const Blog = () => {
                     key={i}
                     className="text-lg font-medium mt-8 border-t dark:border-gray-700 pt-4"
                   >
-                    {section.text}
+                    {section.desc}
                   </p>
                 )
               default:
