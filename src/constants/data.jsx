@@ -16,7 +16,6 @@ import git from "../assets/git.png"
 import cli from "../assets/cli.png"
 import linux from "../assets/linux.png"
 import figma from "../assets/figma.png"
-import hero from "../assets/julhas-hero.png"
 
 import websiteImportance from "../assets/website-importance.png"
 import webAppRole from "../assets/web-app-role.png"
@@ -29,6 +28,8 @@ import JMDashboard from "../assets/jm-dashboard.png"
 import JMDashboardDark from "../assets/jm-dashboard-dark.png"
 import mainul from "../assets/mainul.png"
 import mainulDark from "../assets/mainul-dark.png"
+import quricalcLight from "../assets/quricalcLight.png"
+import quricalcDark from "../assets/quricalcDark.png"
 
 import { PiDevicesDuotone, PiLayoutBold } from "react-icons/pi"
 import { TbLogs, TbMessageSearch } from "react-icons/tb"
@@ -414,6 +415,61 @@ export const projects = [
 
         solution:
           "Developed a modern UI using React and Tailwind CSS featuring clear layouts and controls for easy data management.",
+      },
+    ],
+  },
+  {
+    title:
+      "QuriCalc – Fast and Accurate Calculation App for Betel Leaf Markets",
+    imgDark: quricalcDark,
+    imgLight: quricalcLight,
+    liveLink: "https://quricalc.vercel.app/",
+    gitHubLink: "https://github.com/md-julhas/quri-calc",
+    description:
+      "QuriCalc is developed for local betel leaf sales markets, saving approximately 70–80% of the time compared to traditional methods or standard calculators. The app significantly speeds up sales calculations and report generation, eliminating manual calculation mistakes.",
+    metaDescription:
+      "QuriCalc is developed for local betel leaf sales markets, saving approximately 70–80% of the time compared to traditional methods or standard calculators. The app significantly speeds up sales calculations and report generation, eliminating manual calculation mistakes.",
+    metaKeywords: [
+      "QuriCalc, betel leaf sales, sales calculator, local market, bundle pricing, commission calculator, offline app",
+    ],
+    technologies: [
+      "Vanilla JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "LocalStorage API",
+      "git & gitHub",
+    ],
+
+    features: [
+      {
+        category: "🔧 Solutions Overview",
+        items: [
+          "Automatically calculate the price per bundle based on local terms such as Choli type (8 or 9 quad), number of pairs, and price per quri.",
+          "Generate invoices for sellers, buyers with multiple purchase.",
+          "Summarize total sales, total commission (market organizer’s profit), and total payouts to sellers.",
+          "Reduces hume error-prone and speeds up calculation time.",
+        ],
+      },
+      {
+        category: "🔧 Supports",
+        items: [
+          "Runs offline from a single index.html file that powers the entire app, giving a smooth mobile app experience.",
+          "Used LocalStorage to temporarily store transaction data during active market sessions—specifically for collecting payments from buyers and making payments to sellers.",
+          "Supports adding, editing, and deleting sellers.",
+          "Track all sellers and buyers with integrated search functionality.",
+          "Mobile-first design – optimized for smartphones commonly used by market accountants.",
+        ],
+      },
+    ],
+
+    challenges: [
+      {
+        title: "",
+        description:
+          "In the local betel leaf sales market used traditional selling unit is based on unique local terms such as: 1 Quad = 4 pieces, 1 Choli = 8 or 9 Quads (32 or 36 pieces), 1 Pair Choli = 2 Choli (8 or 9 Quad), 1 Quri = 64 Pairs of 9-Quad Choli (4608 pieces) Or, 1 Quri = 72 Pairs of 8-Quad Choli (4608 pieces). In the market, sellers arrive with one or more bundles of betel leaves. Each bundle contains a certain number of pair cholis—categorized as either 8-quad or 9-quad. The price of a bundle is calculated based on the rate per quri. For instance, if the quri price is 5000৳ and a bundle includes 90 pair cholis of the 9-quad type, the raw price is calculated as: (90 × 5000) ÷ 64 = 7031.25৳. If the choli type is 8-quad, the formula becomes: (90 × 5000) ÷ 72 = 6250৳. This raw amount is charged to the buyer and forms part of the buyer’s invoice. From this raw amount, the market organizer's commission is deducted—typically 10%. For example, 7031.25 × 10% = 703.13৳ as commission. The seller’s final payout then becomes: 7031.25 - 703.13 = 6328.13৳. Since a single seller may have multiple bundles, and the market involves numerous sellers, performing these calculations and works manually with a regular calculator is tedious, error-prone, and mentally exhausting for accountants.",
+
+        solution:
+          "To solve these challenges, I built a simple web app that automates pricing, commission, and payouts. By entering the bundle quantity, quri price, choli type, and buyer and seller names, the app instantly calculates totals and deducts the market organizer’s commission. It supports multiple sellers and bundles, reducing errors and saving time in daily market operations.",
       },
     ],
   },
