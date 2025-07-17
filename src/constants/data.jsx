@@ -30,6 +30,8 @@ import mainul from "../assets/mainul.png"
 import mainulDark from "../assets/mainul-dark.png"
 import quricalcLight from "../assets/quricalcLight.png"
 import quricalcDark from "../assets/quricalcDark.png"
+import userManagementAPILight from "../assets/user-management-api-light.png"
+import userManagementAPIDark from "../assets/user-management-api-dark.png"
 
 import { PiDevicesDuotone, PiLayoutBold } from "react-icons/pi"
 import { TbLogs, TbMessageSearch } from "react-icons/tb"
@@ -547,6 +549,75 @@ export const projects = [
           "Creating a flexible kanban board with task creation, editing, and deletion.",
         solution:
           "Implemented state-driven task management using React hooks, featuring clear UI components for each task state.",
+      },
+    ],
+  },
+  {
+    title: "User Management API",
+    imgDark: userManagementAPIDark,
+    imgLight: userManagementAPILight,
+    liveLink: "",
+    gitHubLink: "https://github.com/md-julhas/user-mangement-backend-API",
+    description:
+      "A Node.js + Express backend for user management, featuring authentication, authorization, email verification, and password reset—ideal for applications requiring secure user account control.",
+    metaDescription:
+      "A Node.js + Express backend for user management, featuring authentication, authorization, email verification, and password reset—ideal for applications requiring secure user account control.",
+    metaKeywords: [
+      "Node.js, Express, User Management, Authentication, Authorization, Email Verification, Password Reset, REST API, Backend API, Secure Login, User Auth, Account Management, User System, Secure API",
+    ],
+    technologies: [
+      "Node.js & Express.js",
+      "MongoDB",
+      "JSON Web Tokens (JWT)",
+      "Nodemailer",
+      "Winston",
+      "HTTP-only Cookies",
+      "git & gitHub",
+    ],
+
+    features: [
+      {
+        category: "🔧 User Registration & Email Verification",
+        items: [
+          "Create user accounts with profile image and email verification via token",
+          "Token is sent via email to verify the user's email address",
+        ],
+      },
+      {
+        category: "🔧 Authentication",
+        items: [
+          "User login and logout",
+          "JSON Web Tokens (JWT) used for authentication",
+          "Refresh and access tokens stored in cookies for secure session management",
+        ],
+      },
+      {
+        category: "🔧 Admin Features",
+        items: ["Get all users with pagination", "Ban and unban users"],
+      },
+      {
+        category: "🔧 User Management",
+        items: [
+          "View single user details",
+          "Update user details",
+          "Delete user",
+          "Change password (authenticated users)",
+          "Forgot password flow with token-based email reset",
+        ],
+      },
+      {
+        category: "🔧 Email Functionality",
+        items: ["Send verification and password reset tokens via email"],
+      },
+      {
+        category: "🔧 Database",
+        items: ["MongoDB used as the database"],
+      },
+      {
+        category: "🔧 Logging",
+        items: [
+          "Winston logger integrated for logging important info and errors",
+        ],
       },
     ],
   },
