@@ -36,7 +36,7 @@ const Hero = () => {
               <RiShareForward2Fill />
               Get In Touch
             </NavLink>
-            {/* <a
+            <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Hero = () => {
             >
               <BsFileEarmarkTextFill />
               View Resume
-            </a> */}
+            </a>
           </div>
         </div>
 
