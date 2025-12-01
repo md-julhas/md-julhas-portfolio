@@ -26,14 +26,14 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_3ax98kc", // serviceID emailjs
+        "service_bory7gk", // serviceID emailjs
         "template_ipt87q9", // templateID emailjs
         {
           from_name: form.name,
           reply_to: form.email,
           message: form.message,
         },
-        "MhvRYF1BphblkFo4F" // Public Key emailjs
+        "PUPj5VJxy_mMYuuU_" // Public Key emailjs
       )
 
       setLoading(false)

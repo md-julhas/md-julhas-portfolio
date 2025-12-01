@@ -88,25 +88,25 @@ export const socialLinks = [
   {
     id: "1",
     name: "Facebook",
-    url: "https://www.facebook.com/JulhasFacebookAccount/",
+    url: "https://www.facebook.com/mdjulhasfb/",
     icon: <TfiFacebook />,
   },
   {
     id: "2",
     name: "Twitter",
-    url: "https://www.facebook.com/JulhasFacebookAccount/",
+    url: "https://x.com/julhas120",
     icon: <IoLogoTwitter />,
   },
   {
     id: "3",
     name: "LinkedIn",
-    url: "https://www.facebook.com/JulhasFacebookAccount/",
+    url: "",
     icon: <RiLinkedinBoxFill />,
   },
   {
     id: "4",
     name: "Instagram",
-    url: "https://www.facebook.com/JulhasFacebookAccount/",
+    url: "",
     icon: <FaSquareInstagram />,
   },
 ]
