@@ -94,13 +94,13 @@ export const socialLinks = [
   {
     id: "2",
     name: "Twitter",
-    url: "https://x.com/julhas120",
+    url: "https://x.com/mdjulhasx",
     icon: <IoLogoTwitter />,
   },
   {
     id: "3",
     name: "LinkedIn",
-    url: "",
+    url: "www.linkedin.com/in/md-julhas-2553433a4",
     icon: <RiLinkedinBoxFill />,
   },
   {

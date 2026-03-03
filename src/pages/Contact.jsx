@@ -33,7 +33,7 @@ const Contact = () => {
           reply_to: form.email,
           message: form.message,
         },
-        "PUPj5VJxy_mMYuuU_" // Public Key emailjs
+        "PUPj5VJxy_mMYuuU_", // Public Key emailjs
       )
 
       setLoading(false)
